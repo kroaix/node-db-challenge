@@ -38,13 +38,21 @@ Commit your code regularly and use descriptive messages. This helps both you (in
 
 Demonstrate your understanding of this week's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
-- [ ] Explain the difference between `Relational Databases` and `SQL`.
+- [x] Explain the difference between `Relational Databases` and `SQL`.
 
-- [ ] Why do tables need a `primary key`?
+Relational Databases are where information is stored to be accessed and/or manipulated. SQL is a query language that can be used within software programs such as SQLite to access and manipulate the data inside of the relational database.
 
-- [ ] What is the name given to a table column that references the primary key on another table.
+- [x] Why do tables need a `primary key`?
 
-- [ ] What do we need in order to have a _many to many_ relationship between two tables.
+It is vital that tables have primary keys because they are unique identifiers for the data within each table. These primary keys can then be referenced within other tables through foreign keys.
+
+- [x] What is the name given to a table column that references the primary key on another table.
+
+This would be the foreign key as mentioned above. Another important aspect of primary/foreign keys is that we can keep our tables organized and DRY.
+
+- [x] What do we need in order to have a _many to many_ relationship between two tables.
+
+In order to accomplish a many to many relationship between two tables we need a intermediary table. This table holds the foreign keys which reference the primary keys of the data within the two tables.
 
 ## Minimum Viable Product
 
@@ -53,13 +61,13 @@ Take the steps necessary to complete the project from scratch. Start by initiali
 Complete the following tasks:
 
 - [x] Design the data model and use _knex migrations_ to create the database and tables.
-- [ ] Build an API with endpoints for:
+- [x] Build an API with endpoints for:
   - [x] adding resources.
   - [x] retrieving a list of resources.
   - [x] adding projects.
   - [x] retrieving a list of projects.
-  - [ ] adding tasks.
-  - [ ] retrieving a list of tasks. **The list of tasks should include the project name and project description**.
+  - [x] adding tasks.
+  - [x] retrieving a list of tasks. **The list of tasks should include the project name and project description**.
 - [x] When returning `project` or `task` information, the `completed` property should be `true` or `false`.
 
 For example, instead of returning a `task` that looks like this:
