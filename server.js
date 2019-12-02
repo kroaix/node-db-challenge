@@ -1,6 +1,6 @@
-const express = require('express');
+const express = require("express");
 
-const Projects = require('./projects/projects-router.js');
+const Projects = require("./projects/projects-router.js");
 const Tasks = require("./tasks/tasks-router.js");
 const Resources = require("./resources/resources-router.js");
 
@@ -9,7 +9,7 @@ const server = express();
 server.use(express.json());
 server.use(logger);
 
-server.use('/api/projects', Projects);
+server.use("/api/projects", Projects);
 server.use("/api/tasks", Tasks);
 server.use("/api/resources", Resources);
 
